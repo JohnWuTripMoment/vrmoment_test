@@ -350,6 +350,9 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.7.2)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     url_safe_base64 (0.2.2)
     whenever (0.9.4)
       chronic (>= 0.6.3)
@@ -405,6 +408,7 @@ DEPENDENCIES
   slim-rails
   spring
   turbolinks
+  uglifier
   venus!
   whenever
   xray-rails
