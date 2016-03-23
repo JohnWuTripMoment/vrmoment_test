@@ -58,6 +58,7 @@ group :development do
   gem 'capistrano', '~> 3.1'
   gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano-rvm'
+  gem 'capistrano-passenger'
   gem 'guard-annotate'
   gem 'annotate'
   gem 'awesome_print'

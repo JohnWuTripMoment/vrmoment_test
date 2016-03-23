@@ -15,6 +15,8 @@ set :scm, :git
 
 set :tmp_dir, "/home/apps/tmp"
 
+set :passenger_restart_with_touch, true
+
 # set :rvm_type, :ubuntu
 # set :rvm_custom_path, '~/home/ubuntu/.rvm'  # only needed if not detected
 
@@ -44,15 +46,15 @@ set :keep_releases, 5
 
 namespace :deploy do
 
-  # desc 'Restart application'
-  # task :restart do
-  #   on roles(:app), in: :sequence, wait: 5 do
-  #     # invoke 'unicorn:legacy_restart'
-  #     invoke 'passenger:restart'
-  #     # Your restart mechanism here, for example:
-  #     # execute :touch, release_path.join('tmp/restart.txt')
-  #   end
-  # end
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # invoke 'unicorn:legacy_restart'
+      "touch tmp/restart.txt"
+      # Your restart mechanism here, for example:
+      # execute :touch, release_path.join('tmp/restart.txt')
+    end
+  end
 
   # after 'deploy:publishing', 'deploy:restart'
 
