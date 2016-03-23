@@ -56,7 +56,7 @@ group :development do
   # gem 'capistrano3-unicorn'
   gem 'capistrano', '~> 3.1'
   gem 'capistrano-rails', '~> 1.1'
-  # gem 'capistrano-rvm'
+  gem 'capistrano-rvm'
   gem 'guard-annotate'
   gem 'annotate'
   gem 'awesome_print'

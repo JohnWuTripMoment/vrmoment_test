@@ -84,6 +84,9 @@ GEM
     capistrano-rails (1.1.6)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     capistrano-sidekiq (0.5.4)
       capistrano
       sidekiq (>= 3.4)
@@ -367,6 +370,7 @@ DEPENDENCIES
   binding_of_caller
   capistrano (~> 3.1)
   capistrano-rails (~> 1.1)
+  capistrano-rvm
   capistrano-sidekiq
   elasticsearch-model
   elasticsearch-rails
