@@ -7,6 +7,7 @@ gem 'uglifier'
 
 # DB
 gem 'pg'
+gem 'sqlite3'
 gem 'activerecord-postgis-adapter'
 gem 'redis'
 gem 'redis-objects', :require => "redis/objects"
