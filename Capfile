@@ -28,5 +28,5 @@ Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 
 # require 'slackistrano'
 # require "whenever/capistrano"
-require 'capistrano/sidekiq'
+# require 'capistrano/sidekiq'
 # require 'capistrano/sitemap_generator'

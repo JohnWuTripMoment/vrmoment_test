@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails'#, '4.1.8'
+gem 'rails', '4.2.5'
 
 # Assets
 gem 'jbuilder', '~> 2.0'
@@ -48,12 +48,15 @@ gem "whenever", :require => false
 # Control Permissions
 gem "pundit"
 
+# test
+gem 'letsencrypt_plugin'
+
 group :development do
   # gem 'slackistrano', :require => false
   # gem 'capistrano3-unicorn'
   gem 'capistrano', '~> 3.1'
   gem 'capistrano-rails', '~> 1.1'
-  # gem 'capistrano-rvm'
+  gem 'capistrano-rvm'
   gem 'guard-annotate'
   gem 'annotate'
   gem 'awesome_print'
