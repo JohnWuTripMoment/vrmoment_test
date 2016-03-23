@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails'#, '4.1.8'
+gem 'rails', '4.2.5'
 
 # Assets
 gem 'jbuilder', '~> 2.0'
@@ -47,6 +47,9 @@ gem "whenever", :require => false
 
 # Control Permissions
 gem "pundit"
+
+# test
+gem 'letsencrypt_plugin'
 
 group :development do
   # gem 'slackistrano', :require => false

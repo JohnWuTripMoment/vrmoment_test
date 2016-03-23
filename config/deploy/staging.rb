@@ -1,18 +1,20 @@
-set :deploy_to, '/home/apps/TripMomentWeb-3.0'
+set :deploy_to, '/home/apps/vrmoment_test'
 set :rails_env, 'staging'
-set :branch, 'develop'
+set :branch, 'master'
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{apps@staging.tripmoment.com}
-role :web, %w{apps@staging.tripmoment.com}
-role :db, %w{apps@staging.tripmoment.com}
-role :sidekiq_server, %w{apps@staging.tripmoment.com}
-role :crontab_server, %w{apps@staging.tripmoment.com}
-role :elasticsearch, %w{apps@staging.tripmoment.com}
+# ip = "52.37.215.12"
+
+role :app, %w{apps@52.196.11.89}
+role :web, %w{apps@52.196.11.89}
+role :db, %w{apps@52.196.11.89}
+# role :sidekiq_server, %w{apps@staging.tripmoment.com}
+# role :crontab_server, %w{apps@staging.tripmoment.com}
+# role :elasticsearch, %w{apps@staging.tripmoment.com}
 
 
 # server-based syntax
