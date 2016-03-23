@@ -13,6 +13,8 @@ set :repo_url, 'git@github.com:JohnWuTripMoment/vrmoment_test.git'
 # Default value for :scm is :git
 set :scm, :git
 
+set :rvm_custom_path, '~/home/ubuntu/.rvm'  # only needed if not detected
+
 # Default value for :format is :pretty
 # set :format, :pretty
 
