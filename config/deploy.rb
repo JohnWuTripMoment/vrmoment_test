@@ -50,7 +50,7 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # invoke 'unicorn:legacy_restart'
-      "touch tmp/restart.txt"
+      "touch %RAILS_ROOT%/tmp/restart.txt"
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
     end
