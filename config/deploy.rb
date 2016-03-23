@@ -13,6 +13,8 @@ set :repo_url, 'git@github.com:JohnWuTripMoment/vrmoment_test.git'
 # Default value for :scm is :git
 set :scm, :git
 
+set :tmp_dir, "/home/apps/tmp"
+
 # set :rvm_type, :ubuntu
 # set :rvm_custom_path, '~/home/ubuntu/.rvm'  # only needed if not detected
 
@@ -27,6 +29,7 @@ set :scm, :git
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/application.yml')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml')
 
 # Default value for linked_dirs is []
 # set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
