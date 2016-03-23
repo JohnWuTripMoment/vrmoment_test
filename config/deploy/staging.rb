@@ -1,6 +1,6 @@
 set :deploy_to, '/home/apps/vrmoment_test'
 set :rails_env, 'staging'
-set :branch, 'master'
+set :branch, 'feature/capsitrano-setting'
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
