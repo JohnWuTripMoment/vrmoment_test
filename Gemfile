@@ -3,6 +3,7 @@ gem 'rails', '4.2.5'
 
 # Assets
 gem 'jbuilder', '~> 2.0'
+gem 'uglifier'
 
 # DB
 gem 'pg'
