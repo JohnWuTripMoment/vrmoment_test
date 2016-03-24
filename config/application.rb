@@ -42,7 +42,7 @@ module Vrmoment
     config.i18n.load_path += Dir[File.join(Rails.root, 'config', 'locales', '**', '*.{rb,yml}')]
     config.i18n.default_locale = "zh-TW"
 
-    config.compass.sourcemap = true
+    # config.compass.sourcemap = true
 
     Slim::Engine.set_options pretty: true
   end
