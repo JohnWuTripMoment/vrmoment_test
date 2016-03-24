@@ -26,5 +26,24 @@ module Vrmoment
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # disable some file generators
+    config.generators.stylesheets = false
+    config.generators.javascripts = false
+    config.generators.helper = false
+    config.generators.helper_specs = false
+    # factory girl rails
+    config.generators do |g|
+      g.test_framework :rspec, :fixture => true, :views => false, :fixture_replacement => :factory_girl
+      g.fixture_replacement :factory_girl, :dir => "spec/factories"
+    end
+
+    config.time_zone = 'Taipei'
+    config.i18n.load_path += Dir[File.join(Rails.root, 'config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.default_locale = "zh-TW"
+
+    config.compass.sourcemap = true
+
+    Slim::Engine.set_options pretty: true
   end
 end
